@@ -1,4 +1,6 @@
 const clock = document.querySelector("span.clock");
+const header = document.querySelector("div.friends-screen__channel-header");
+const contents = document.querySelector("div.friends-screen__channel-contents");
 
 function getClock() {
   const date = new Date();
@@ -9,3 +11,9 @@ function getClock() {
 
 getClock();
 setInterval(getClock, 1000);
+
+function clickChannel() {
+  contents.classList.toggle("hidden");
+}
+
+header.addEventListener("click", clickChannel);
