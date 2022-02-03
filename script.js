@@ -1,5 +1,5 @@
 const clock = document.querySelector("span.clock");
-const header = document.querySelector("div.friends-screen__channel-header");
+const header = document.querySelector("i.fa-chevron-up");
 const contents = document.querySelector("div.friends-screen__channel-contents");
 
 function getClock() {
